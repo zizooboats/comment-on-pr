@@ -14,7 +14,7 @@ inputs:
     default: true
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: public.ecr.aws/t9f6y4b8/zizoo/comment-on-pr-cd
   args:
     - ${{ inputs.msg }}
     - ${{ inputs.check_for_duplicate_msg }}
